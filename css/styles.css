@@ -25,6 +25,23 @@ h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -139,11 +156,11 @@ h6 {
 
 /** ---------HERO---------- **/
 
-#hero {
+.hero {
   background-color: var(--dark-color);
 }
 
-#hero {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -166,6 +183,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
+  min-width: 169px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -187,7 +205,7 @@ h6 {
 
 #advantages {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 #advantages .section-list {
@@ -259,15 +277,14 @@ h6 {
 }
 
 #team .team-info {
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding: 32px 16px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 #team .section-list-item .list-item-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -295,8 +312,12 @@ h6 {
   color: var(--light-color);
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer .footer-text {
-  margin-top: 18px;
   font-size: 16px;
   max-width: 264px;
   line-height: 1.5;
@@ -350,9 +371,7 @@ h6 {
 }
 
 #portfolio .portfolio-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
   border-top: none;
 }
